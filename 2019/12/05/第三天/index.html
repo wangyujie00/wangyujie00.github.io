@@ -5,13 +5,16 @@
   
 
   
-  <title>Hexo</title>
+  <title>第三天 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="内置对象    在jsp页面中不需要创建，直接使用的对象    一共有9个：        变量名                    真实类型                作用        pageContext                PageContext            当前页面共享数据，还                        可以获取其他八个内置对象 requ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第三天">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;05&#x2F;%E7%AC%AC%E4%B8%89%E5%A4%A9&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="内置对象    在jsp页面中不需要创建，直接使用的对象    一共有9个：        变量名                    真实类型                作用        pageContext                PageContext            当前页面共享数据，还                        可以获取其他八个内置对象 requ">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-05T07:12:23.992Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -59,9 +62,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-第三天" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-第三天" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/12/05/%E7%AC%AC%E4%B8%89%E5%A4%A9/" class="article-date">
   <time datetime="2019-12-05T07:10:26.000Z" itemprop="datePublished">2019-12-05</time>
@@ -74,8 +75,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/05/%E7%AC%AC%E4%B8%89%E5%A4%A9/">第三天</a>
+    <h1 class="article-title" itemprop="name">
+      第三天
     </h1>
   
 
@@ -158,198 +159,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-第二天" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/" class="article-date">
-  <time datetime="2019-12-05T07:07:18.000Z" itemprop="datePublished">2019-12-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/">第二天</a>
-    </h1>
+    <a href="/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">第二天</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>JSP进一步讲解</p>
-<ol>
-<li>指令<pre><code>作用：用于配置JSP页面，导入资源文件
-格式：
-    &lt;%@ 指令名称 属性名1=属性值1 属性名2=属性值2 ... %&gt;
-分类：
-    1. page： 配置JSP页面的
-        contentType：等同于response.setContentType()
-            1. 设置响应体的mime类型以及字符集
-            2. 设置当前jsp页面的编码（只能是高级的IDE才能生效，如果使</code></pre>用低级工具，则需要设置pageEncoding属性设置当前页面的字符集）<pre><code>    import：导包 &lt;%@ page &gt;
-    errorPage：当前页面发生异常后，会自动跳转到指定的错误页面
-    isErrorPage：标识当前也是是否是错误页面。
-        true：是，可以使用内置对象exception
-        false：否。默认值。不可以使用内置对象exception
-2. include    ： 页面包含的。导入页面的资源文件
-    &lt;%@include file=&quot;top.jsp&quot;%&gt;
-3. taglib    ： 导入资源
-    &lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
-     prefix：前缀，自定义的</code></pre><ol start="2">
-<li>注释:</li>
-<li>html注释： <!-- -->:只能注释html代码片段</li>
-<li>jsp注释：推荐使用<br> &lt;%– –%&gt;：可以注释所有</li>
-</ol>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/" data-id="ck3sdv4me0003wsuucw8m9xbf" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-第一天" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="article-date">
-  <time datetime="2019-12-04T10:39:31.000Z" itemprop="datePublished">2019-12-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/">第一天</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>掌握http协议之响应部分</p>
-<ol>
-<li>请求消息：客户端发送给服务器端的数据<br> 数据格式：<pre><code>1. 请求行
-2. 请求头
-3. 请求空行
-4. 请求体</code></pre><ol start="2">
-<li>响应消息：服务器端发送给客户端的数据<br>数据格式：<ol>
-<li>响应行<ol>
-<li>组成：协议/版本 响应状态码 状态码描述</li>
-<li>响应状态码：服务器告诉客户端浏览器本次请求和响应的一个状态。<ol>
-<li>状态码都是3位数字 </li>
-<li>分类：</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>1xx：服务器就收客户端消息，但没有接受完成，等待一段时       间后，发送1xx多状态码<pre><code>2. 2xx：成功。代表：200
-3. 3xx：重定向。代表：302(重定向)，304(访问缓存)
-4. 4xx：客户端错误。
-    代表：
-        404（请求路径没有对应的资源） 
-        405：请求方式没有对应的doXxx方法
-5. 5xx：服务器端错误。代表：500(服务器内部出现异常)        </code></pre><ol start="2">
-<li>响应头：<ol>
-<li>格式：头名称： 值</li>
-<li>常见的响应头：<ol>
-<li>Content-Type：服务器告诉客户端本次响应体数据格式以及编码格式</li>
-<li>Content-disposition：服务器告诉客户端以什么格式打开响应体数据<br>值：<br>  in-line:默认值,在当前页面内打开<br>  attachment;filename=xxx：以附件形式打开响应体。文件下载</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>响应空行</li>
-<li>响应体:传输的数据</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/" data-id="ck3sdv4ls0000wsuu5k4y1s7n" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/04/hello-world/" class="article-date">
-  <time datetime="2019-12-04T10:31:36.326Z" itemprop="datePublished">2019-12-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/04/hello-world/" data-id="ck3sdv4m10001wsuu75ml86oz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
