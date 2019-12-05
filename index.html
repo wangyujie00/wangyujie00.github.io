@@ -61,6 +61,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-第二天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/" class="article-date">
+  <time datetime="2019-12-05T07:07:18.000Z" itemprop="datePublished">2019-12-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/">第二天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>JSP进一步讲解</p>
+<ol>
+<li>指令<pre><code>作用：用于配置JSP页面，导入资源文件
+格式：
+    &lt;%@ 指令名称 属性名1=属性值1 属性名2=属性值2 ... %&gt;
+分类：
+    1. page： 配置JSP页面的
+        contentType：等同于response.setContentType()
+            1. 设置响应体的mime类型以及字符集
+            2. 设置当前jsp页面的编码（只能是高级的IDE才能生效，如果使</code></pre>用低级工具，则需要设置pageEncoding属性设置当前页面的字符集）<pre><code>    import：导包 &lt;%@ page &gt;
+    errorPage：当前页面发生异常后，会自动跳转到指定的错误页面
+    isErrorPage：标识当前也是是否是错误页面。
+        true：是，可以使用内置对象exception
+        false：否。默认值。不可以使用内置对象exception
+2. include    ： 页面包含的。导入页面的资源文件
+    &lt;%@include file=&quot;top.jsp&quot;%&gt;
+3. taglib    ： 导入资源
+    &lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+     prefix：前缀，自定义的</code></pre><ol start="2">
+<li>注释:</li>
+<li>html注释： <!-- -->:只能注释html代码片段</li>
+<li>jsp注释：推荐使用<br> &lt;%– –%&gt;：可以注释所有</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/" data-id="ck3sdq0gd0000scuuenclb798" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-第一天" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="article-date">
@@ -128,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/" data-id="ck3r5wvw20001douu6l1jamju" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/" data-id="ck3sdq0gl0001scuuer7xaicf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -177,7 +238,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/04/hello-world/" data-id="ck3r5wvvu0000douu0arohvpn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/04/hello-world/" data-id="ck3sdq0go0002scuu2oqq08bw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -216,6 +277,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/">第二天</a>
+          </li>
         
           <li>
             <a href="/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/">第一天</a>

@@ -5,16 +5,16 @@
   
 
   
-  <title>第一天 | Hexo</title>
+  <title>第二天 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="掌握http协议之响应部分  请求消息：客户端发送给服务器端的数据 数据格式：1. 请求行 2. 请求头 3. 请求空行 4. 请求体 响应消息：服务器端发送给客户端的数据数据格式： 响应行 组成：协议&#x2F;版本 响应状态码 状态码描述 响应状态码：服务器告诉客户端浏览器本次请求和响应的一个状态。 状态码都是3位数字  分类：       1xx：服务器就收客户端消息，但没有接受完成，等待一段时">
+  <meta name="description" content="JSP进一步讲解  指令作用：用于配置JSP页面，导入资源文件 格式：     &amp;lt;%@ 指令名称 属性名1&#x3D;属性值1 属性名2&#x3D;属性值2 ... %&amp;gt; 分类：     1. page： 配置JSP页面的         contentType：等同于response.setContentType()             1. 设置响应体的mime类型以及字符集">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一天">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;04&#x2F;%E7%AC%AC%E4%B8%80%E5%A4%A9&#x2F;index.html">
+<meta property="og:title" content="第二天">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;05&#x2F;%E7%AC%AC%E4%BA%8C%E5%A4%A9&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="掌握http协议之响应部分  请求消息：客户端发送给服务器端的数据 数据格式：1. 请求行 2. 请求头 3. 请求空行 4. 请求体 响应消息：服务器端发送给客户端的数据数据格式： 响应行 组成：协议&#x2F;版本 响应状态码 状态码描述 响应状态码：服务器告诉客户端浏览器本次请求和响应的一个状态。 状态码都是3位数字  分类：       1xx：服务器就收客户端消息，但没有接受完成，等待一段时">
+<meta property="og:description" content="JSP进一步讲解  指令作用：用于配置JSP页面，导入资源文件 格式：     &amp;lt;%@ 指令名称 属性名1&#x3D;属性值1 属性名2&#x3D;属性值2 ... %&amp;gt; 分类：     1. page： 配置JSP页面的         contentType：等同于response.setContentType()             1. 设置响应体的mime类型以及字符集">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-04T10:41:08.875Z">
+<meta property="og:updated_time" content="2019-12-05T07:08:24.585Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -62,10 +62,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-第一天" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-第二天" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="article-date">
-  <time datetime="2019-12-04T10:39:31.000Z" itemprop="datePublished">2019-12-04</time>
+    <a href="/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/" class="article-date">
+  <time datetime="2019-12-05T07:07:18.000Z" itemprop="datePublished">2019-12-05</time>
 </a>
     
   </div>
@@ -76,7 +76,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      第一天
+      第二天
     </h1>
   
 
@@ -84,44 +84,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>掌握http协议之响应部分</p>
+        <p>JSP进一步讲解</p>
 <ol>
-<li>请求消息：客户端发送给服务器端的数据<br> 数据格式：<pre><code>1. 请求行
-2. 请求头
-3. 请求空行
-4. 请求体</code></pre><ol start="2">
-<li>响应消息：服务器端发送给客户端的数据<br>数据格式：<ol>
-<li>响应行<ol>
-<li>组成：协议/版本 响应状态码 状态码描述</li>
-<li>响应状态码：服务器告诉客户端浏览器本次请求和响应的一个状态。<ol>
-<li>状态码都是3位数字 </li>
-<li>分类：</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>1xx：服务器就收客户端消息，但没有接受完成，等待一段时       间后，发送1xx多状态码<pre><code>2. 2xx：成功。代表：200
-3. 3xx：重定向。代表：302(重定向)，304(访问缓存)
-4. 4xx：客户端错误。
-    代表：
-        404（请求路径没有对应的资源） 
-        405：请求方式没有对应的doXxx方法
-5. 5xx：服务器端错误。代表：500(服务器内部出现异常)        </code></pre><ol start="2">
-<li>响应头：<ol>
-<li>格式：头名称： 值</li>
-<li>常见的响应头：<ol>
-<li>Content-Type：服务器告诉客户端本次响应体数据格式以及编码格式</li>
-<li>Content-disposition：服务器告诉客户端以什么格式打开响应体数据<br>值：<br>  in-line:默认值,在当前页面内打开<br>  attachment;filename=xxx：以附件形式打开响应体。文件下载</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>响应空行</li>
-<li>响应体:传输的数据</li>
-</ol>
-</li>
+<li>指令<pre><code>作用：用于配置JSP页面，导入资源文件
+格式：
+    &lt;%@ 指令名称 属性名1=属性值1 属性名2=属性值2 ... %&gt;
+分类：
+    1. page： 配置JSP页面的
+        contentType：等同于response.setContentType()
+            1. 设置响应体的mime类型以及字符集
+            2. 设置当前jsp页面的编码（只能是高级的IDE才能生效，如果使</code></pre>用低级工具，则需要设置pageEncoding属性设置当前页面的字符集）<pre><code>    import：导包 &lt;%@ page &gt;
+    errorPage：当前页面发生异常后，会自动跳转到指定的错误页面
+    isErrorPage：标识当前也是是否是错误页面。
+        true：是，可以使用内置对象exception
+        false：否。默认值。不可以使用内置对象exception
+2. include    ： 页面包含的。导入页面的资源文件
+    &lt;%@include file=&quot;top.jsp&quot;%&gt;
+3. taglib    ： 导入资源
+    &lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+     prefix：前缀，自定义的</code></pre><ol start="2">
+<li>注释:</li>
+<li>html注释： <!-- -->:只能注释html代码片段</li>
+<li>jsp注释：推荐使用<br> &lt;%– –%&gt;：可以注释所有</li>
 </ol>
 </li>
 </ol>
@@ -129,7 +113,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/" data-id="ck3sdq0gl0001scuuer7xaicf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/" data-id="ck3sdq0gd0000scuuenclb798" class="article-share-link">Share</a>
       
       
     </footer>
@@ -138,19 +122,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/12/05/%E7%AC%AC%E4%BA%8C%E5%A4%A9/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          第二天
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/12/04/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/12/04/%E7%AC%AC%E4%B8%80%E5%A4%A9/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">第一天</div>
     </a>
   
 </nav>
